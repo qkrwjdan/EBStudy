@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
     res.send({ version: VERSION });
 })
 
+app.get('/new_page', (req, res) => {
+    res.send({text : "It's new page!"});
+})
+
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
